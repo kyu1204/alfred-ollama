@@ -2086,20 +2086,6 @@ class Workflow(object):
         # Call workflow's entry function/method within a try-except block
         # to catch any errors and display an error message in Alfred
         try:
-            if self.version:
-                self.logger.debug(
-                    "---------- %s (%s) ----------", self.name, self.version
-                )
-            else:
-                self.logger.debug("---------- %s ----------", self.name)
-
-            # Run update check if configured for self-updates.
-            # This call has to go in the `run` try-except block, as it will
-            # initialise `self.settings`, which will raise an exception
-            # if `settings.json` isn't valid.
-            if self._update_settings:
-                self.check_update()
-
             # Run workflow's entry function/method
             func(self)
 
