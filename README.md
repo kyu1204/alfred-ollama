@@ -10,7 +10,7 @@ Use [Ollama](https://ollama.ai) for local llama inference on Alfred.
 
 ## Requirements
 
-[Ollama](https://ollama.ai) installed and running on your mac. At least one model need to be installed throw Ollama cli tools or with 'Manage Models' Command. You can find all available model [here](https://ollama.ai/library).
+[Ollama](https://ollama.ai) installed and running on your mac. At least one model need to be installed throw Ollama cli tools.
 
 required install model: `llama2`
 ```bash
